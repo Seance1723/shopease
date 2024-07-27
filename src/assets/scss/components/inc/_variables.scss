@@ -1,0 +1,86 @@
+/*
+*
+* Contains all map & variables for the scss
+*
+*
+*/
+
+@import "./mixins";
+
+$default-font-family: Plus Jakarta Sans, sans-serif;
+
+// Variables
+$baseFontSize: 16px; // default base font size
+$minViewportSize: 360; // minimum viewport size
+$maxViewportSize: 2560; // maximum viewport size
+
+//Colors
+$colors: (
+  primary: #003366,
+  primaryD: #002244,
+  PrimaryL: #004080,
+  primaryA: #0056A0,
+  secondary: #FFD700,
+  secondaryD: #E6C200,
+  secondaryL: #FFEA66,
+  secondaryA: #FFC107,
+  lightGrey: #F5F5F5,
+  grey: #E6E9F2,
+  darkGrey: #BCC3D3,
+  charcoal: #333333,
+  white: #FFFFFF,
+  black: #000000,
+
+  backgroundLight: #F5F5F5,
+  backgroundDark: #E0E0E0,
+
+  textPrimary: #333333,
+  textSecondary: #666666,
+  textLight: #999999,
+
+  borderLight: #E0E0E0,
+  borderDark: #CCCCCC,
+
+  success: #28A745,
+  warning: #FFC107,
+  error: #DC3545,
+  info: #17A2B8,
+
+  shadowLight: rgba(0, 0, 0, 0.1),
+  shadowDark: rgba(0, 0, 0, 0.3),
+
+  primary-hover: #5e399d,
+  dark: #160e25,
+  text: #07040b,
+);
+
+//@include define-colors($colors);
+
+//Header font size
+$header-font-sizes: (
+  h1: 38px,
+  h2: 32px,
+  h3: 26px,
+  h4: 22px,
+  h5: 18px,
+  h6: 15px
+);
+
+$font-sizes: (
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px
+);
+
+@include root-vars;
+
+
+
+
+
+

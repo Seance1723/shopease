@@ -1,0 +1,107 @@
+.contact-sec-footer{
+    padding: 80px 0 60px 0;
+    background-color: var(--light-color);
+    a{
+        text-decoration: none;
+        color: var(--dark-color);
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+}
+footer{
+    &#main-footer{
+        &.site-footer{
+            padding: 60px 0 30px 0;
+            background-color: #2A3546;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            .footer-top{
+                .footer-brand{
+                    img{
+                        width: 100%;
+                        height: auto;
+                        max-width: 200px;
+                    }
+                }
+                .social-links{
+                    font-size: 16px;
+                    color: #ffffff;
+                    padding-left: 1.2%;
+                    .footer-navigation, .menu-footer-main-container{
+                        display: inline-block;
+                    }
+                    .footer-navigation{
+                        ul{
+                            padding: 0;
+                            margin: 0;
+                            li{
+                                display: inline-block;
+                                &:first-child{
+                                    &::before{
+                                        display: none;
+                                    }
+                                }
+                                &::before{
+                                    content: '/';
+                                    padding: 0 8px;
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: inherit;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-animation-text{
+                    position: relative;
+                    padding-bottom: 60px;
+                    .widget-title, .widgettitle{
+                        padding-left: 200px;
+                        display: flex;
+                        font-size: 184px;
+                        color: transparent;
+                        -webkit-text-stroke: 1px rgba(90, 106, 133, 0.6);
+                        white-space: nowrap; // prevents the text from breaking into multiple lines
+                        animation: slide-left 25s linear infinite; // 5s can be adjusted based on your preference
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        &:last-child{
+                            padding-right: 200px;
+                        }
+                    }
+                    .widget{
+                        position: relative;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: flex-start;
+                        
+                    }
+                }
+            }
+            .site-info{
+                border-top: 1px solid #5A6A85;
+                padding-top: 30px;
+                font-size: 12px;
+                text-align: left;
+                color: #ffffff;
+                a{
+                    color: #F16539;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-left {
+    0% {
+      transform: translate3d(0, 0, 0); // start from the right outside the container
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0); // end at the left outside the container
+    }
+}
